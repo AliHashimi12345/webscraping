@@ -3,7 +3,7 @@
 {% block body %}
   <div class="container">
     <div class="row">
-      <!-- HTML response view -->
+  
       <div class="col-8">
         <div class="form-group">
           <textarea class="form-control mt-2" id="htmlResponse" rows="32">{{ content }}</textarea>
@@ -20,18 +20,18 @@
             <!-- Filter tags -->
             <div class="form-group">
               
-              <!-- Tag name -->
+              
               <input type="text" class="form-control" id="tag" placeholder="Add tag name to filter content by...">              
               
-              <!-- CSS class -->
+              
               <input type="text" class="form-control mt-2" id="css" placeholder="Add CSS Class to filter tag by...">
 
-              <!-- Attributes -->
+              
               <input type="text" class="form-control mt-2" id="attr" placeholder="Add attributes to filter tag by...">
 
             </div>
             
-            <!-- Add button -->
+            
             <button class="btn btn-warning mt-2 col-sm" onclick="add_tag()">Add</button>
           </div>
         </div>
@@ -54,7 +54,7 @@
             </tbody>
           </table>
           
-          <!--  Search for tags -->
+          
           <div class="col"><button class="btn btn-success col-sm-10" type='submit'>Scrape</button></div>
           
         </form>
@@ -64,10 +64,10 @@
   </div>
   
   <script type="text/javascript">
-    // row count holder
+    
     var row_count = -1;
     
-    // add tag to scrape
+    
     function add_tag() {
       tag = document.getElementById("tag");
       css = document.getElementById("css");
@@ -105,7 +105,7 @@
         alert('You need at least to specify the tag name!')
     }
     
-    // delete tag to scrape
+    
     function del_tag(row_id) {
       var table = document.getElementById("tags");
       var row = document.getElementById(row_id);
